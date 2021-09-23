@@ -1,0 +1,17 @@
+cd to main.tf folder
+terraform init
+terraform plan
+terraform apply
+
+# grab our EKS config
+aws eks update-kubeconfig --name repute-net-eks --region ap-south-1
+
+# Get kubectl
+
+kubectl get nodes
+kubectl get deploy
+kubectl get pods
+kubectl get svc
+
+#now please distroy resources to save cost
+terraform distroy
